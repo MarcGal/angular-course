@@ -9,6 +9,12 @@ export class AppComponent {
   title = 'angular-course-beginner';
 
   onLogoClicked() {
-    alert('Hello world')
+    alert('Hello world');
   }
+
+  onKeyUp(newTitle: string) {
+    console.log(newTitle);
+    this.title = newTitle;
+  }
+
 }
